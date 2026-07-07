@@ -14,6 +14,8 @@ import { initAuthTables } from './src/api/auth/service/auth.service.js';
 const app = express();
 const port = process.env.PORT || 5004;
 
+app.set('trust proxy', 1);
+
 // ---------------------------------------------------------------------------
 // Startup env validation — fail fast rather than crash mid-request.
 // ---------------------------------------------------------------------------
