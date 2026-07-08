@@ -12,6 +12,7 @@ import { errorHandler } from './src/middleware/error-handler.js';
 import { initAuthTables } from './src/api/auth/service/auth.service.js';
 
 const app = express();
+console.log("BUILD_CHECK_" + Date.now());
 const port = process.env.PORT || 5004;
 
 app.set('trust proxy', 1);
